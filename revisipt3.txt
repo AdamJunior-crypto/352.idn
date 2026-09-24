@@ -1,0 +1,30 @@
+Home Page
+1. Hilangkan label author di card [done]
+2. Label kategori disetiap card lebih simple (refrensi di website bola.com) [done]
+3. Tambahkan upload date di card [done]
+4. Tambahkan short deskripsi di card [done]
+5. Header di bagian sidebar text "Timnas Indonesia" Terlalu besar [done]
+6. Perbaiki tampian suport headline [done]
+
+kategori Page
+1. Di halaman kategori, list card masih belum sesuai UI/UX [done]
+
+Artikel Page
+1. hapus label kategori [done]
+2. Perbaiki logo social media [done]
+
+Footer
+1. Perbaiki social media [done]
+2. hapus about/kalimat singkat di bawah logo [done]
+3. Hapus kategori [done]
+4. di colom perusahaan buat konten seperti ini: [done]
+    - Kontak
+    - redaksi
+    - disclamer
+    - pedoman media siber
+
+Latest news Page 
+- halaman ini belum dibuat [done]
+
+Component
+- Perbaiki sekelaton loading, terutama loading di halaman Artikel

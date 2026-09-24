@@ -1,0 +1,35 @@
+Revisi 352.idn Website
+
+1. Category menggunakan data statik/hard code. Gunakan type category dari cms untuk filter category berita
+2. Terdapat light/dark Mode dan taruh tombol toggle di kanan navbar jadi search dipindahkan di tengah navbar
+3. Headline. Tampilan headline tidak sesuai UI/UX Teks terlalu besar, gambar jadi tidaak terlihat. Perbaiki lagi tampilan
+headline agar lebih moderen dan rapih secara UI/UX
+4. Hapus field Berita Utama
+5. Field Timnas indonesia berada di sidebar tepat sejajar dengan Headline.
+6. Field berita terbaru jangan menampilkan header dengan tulisan "Berita Terbaru" cukup langsung grid berita dan di header tampilkan 
+"Lihat Semua" dan masuk ke halaman berita terbaru dedngan sistem unlimited scroll dimana terdapat 10 berita dan disetiap 
+berita ke 8 muncul/masuk window maka akan request lagi
+7. field trending adalah berita yang sedang hangat, ini akan muncul di bawah headline tanpa ada header dan tampilkan maximal 4 
+jadi fungsi berita ini untuk support headline agar terlihat seperti berita penting. Buat field schema agar aku bisa memilih berita
+mana saja yang dijadikan support headline/berita hangat
+8. hapus beberapa schema sanity ini dari studio dan semuaa yang bersangkutan dengan nya di halaman website/component react
+	- site settings
+	- trending item
+	- sponsore banner
+Dan tambahkan field ini 
+	- tambahkan field hot article dimana field ini hanya terdiri dari 4 article yang ditampilkan di bawawh headline sebagai support
+9. Social media ditulis secara hardcode tapi aku ingin data nya berupa .tsx yang disimpan di folder assets, Buat file socialMedia.ts ini 
+akan di import di footer. Dan hapus component dengan background hitam di atas navbar karena aku tidak melihat potensi fungsi.
+10. Di schema hapus field color dan order
+11. di halaman /artikel/judul artikel Ada beberapa yang harus di revisi
+	1. tampilan baca article baagian judul, sub judul, main image, terlalu besar dan isi content nya kecil ini menyebabkan 
+	ketidak konsistenan antar UI header dan UI konten jadi UX bisa terganggu. Adjust header agar mengikuti ukuran conten yang mengecil
+	2. Tampilkan profile gambar author, nama author, dan social media author. Lalu diikuti sebelah kanan section ini baru tampilkan 
+	kapan article ini di upload dan kapan diupdate 
+12. Buat halaman untuk menampilkan berita berdasarkan kategori yang sudah aku buatt di cms. Category ini lah salah satu identitas
+berita agar mudah dicari dan terorganisir. URL /kategori/nama-kategori Aku sudah menambahkan 1 article/bertia dengan kategori 
+timans-indonesia tapi ketika aku masuk ke halaman /timnas-indonesia (belum ada /kategori dan aku ingin kmau tambahkan ini) belum muncul
+fix ini juga.
+
+Aku sudah membuat konfigurasi sanity yang bisa kamu baca di dalam file /studio/schemaTypes
+

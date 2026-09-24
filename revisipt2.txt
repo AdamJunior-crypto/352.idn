@@ -1,0 +1,21 @@
+1. Hapus "Update At" pada schema sanity
+2. Perbaiki layout profile pada penulis article seperti ini
+- profile
+- di samping profile terdapat 2 hal 
+    - nama author
+    - 'Diterbitkan' tambahkan upload at
+- lalu di sebelah kanan tampilkana social media beserta logo. Logo akan otomatis ditambahkan tergantung media social apa. 
+3. Tambahkan social media pada author. Beberapa media social yang bisa ditambahkan 
+[instagram, facebook, youtube, twitter, telegram, whatsapp]
+4. Aku gak tahu apa namanya tapi section/component yang menampilkan ini (Home > Timnas Indonesia > Resmi! Tinggalkan Jerman, Amar Brkic Pilih Bermain di BRI Super League Bersama Borneo FC) Tapi buat bagian judul article yang terlalu panjang maka akan dipotong ambil beberapa kata dan tampilkan ...
+5. Tampilan daftar article di halaman kategori terlalu besar. Buat list dengan fitur unlimited scroll dengan fitur seperti sebelumnya (list ke 8 maka request lagi)
+6. Terdapat 2 tombol "X" ketika value search terisi. Hilangkan versi X yang muncul ketika di hover
+7. Dark mode masih belum berfungsi dan hanya mengganti style text tanpa mengganti wawrna background
+9. Tampilan Headline sangat tidak menarik. Perbaiki lagi dengan struktur seperti ini 
+- Image full
+- lapiskan background hitam di depan gambar dan posisi 30% dari bawah dengan gradasi dari bawah warna hitam dan atas transparent
+- tampilkan teks di atas background hitam, jangan terlalu besar dan juga jangan terlalu kecil
+- tampilkan juga informasi tambahan seperti kapan article ini ter update seperti sudah berapa lama article ini di update terakhir kali (30 Menit yang lalu/ 1 Jam Yang lalu)
+- Tampilkan kategori di atas judul
+- tampilkan short deskripsi 
+- tidak perlu tampilkan author disini
