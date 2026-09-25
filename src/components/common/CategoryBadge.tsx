@@ -14,7 +14,7 @@ export default function CategoryBadge({
   size = 'sm',
   className,
 }: CategoryBadgeProps) {
-  const classes = `inline-block font-bold uppercase tracking-wide text-primary ${
+  const classes = `inline-block font-medium uppercase tracking-wide text-primary ${
     size === 'sm' ? 'text-[11px]' : 'text-xs'
   }${className ? ` ${className}` : ''}`;
 

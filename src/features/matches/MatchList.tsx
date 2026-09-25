@@ -17,12 +17,12 @@ export default function MatchList({ matches }: MatchListProps) {
     <div className="space-y-6">
       {Object.entries(grouped).map(([competition, items]) => (
         <div key={competition}>
-          <h3 className="mb-3 text-xs font-bold uppercase tracking-wide text-primary">{competition}</h3>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-primary">{competition}</h3>
           <div className="space-y-2">
             {items.map((match) => (
               <div key={match.id} className="flex items-center rounded-md border border-border p-3">
                 <span className="flex-1 truncate text-sm font-medium text-text">{match.homeTeam.name}</span>
-                <span className="mx-3 rounded bg-surface px-3 py-1 text-sm font-bold text-text">
+                <span className="mx-3 rounded bg-surface px-3 py-1 text-sm font-medium text-text">
                   {match.status === 'finished' || match.status === 'live'
                     ? `${match.homeScore ?? 0} - ${match.awayScore ?? 0}`
                     : formatTime(match.kickoffAt)}

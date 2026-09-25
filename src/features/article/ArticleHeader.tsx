@@ -50,7 +50,7 @@ export default function ArticleHeader({ article }: ArticleHeaderProps) {
         ]}
       />
 
-      <h1 className="mt-4 text-2xl font-extrabold leading-tight text-text sm:text-3xl lg:text-4xl">
+      <h1 className="mt-4 text-2xl font-semibold font-serif leading-tight text-text sm:text-3xl lg:text-4xl">
         {article.title}
       </h1>
       <p className="mt-4 text-md text-text-secondary leading-relaxed">
@@ -67,7 +67,7 @@ export default function ArticleHeader({ article }: ArticleHeaderProps) {
               className="w-10 h-10 rounded-full object-cover bg-surface"
             />
           ) : (
-            <div className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-muted font-bold">
+            <div className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-muted font-medium font-serif text-lg">
               {article.author.name.charAt(0)}
             </div>
           )}

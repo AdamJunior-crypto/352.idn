@@ -15,7 +15,7 @@ export default function LatestFeature() {
   return (
     <div className="mx-auto max-w-[var(--container-max)] px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight text-text-primary">
+        <h1 className="text-3xl font-semibold tracking-tight text-text-primary font-serif">
           Artikel Terbaru
         </h1>
         <p className="mt-2 text-text-muted">Berita terbaru dan terkini.</p>

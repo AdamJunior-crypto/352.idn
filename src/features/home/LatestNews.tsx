@@ -11,7 +11,7 @@ export default function LatestNews() {
   return (
     <section>
       <div className="flex items-center justify-between mb-4 border-b border-border pb-2">
-        <h2 className="text-xl font-bold text-text lg:text-xl">
+        <h2 className="text-xl font-semibold text-text lg:text-xl">
           Update Terbaru
         </h2>
         <Link

@@ -10,7 +10,7 @@ export default function MatchSidebar({ matches }: MatchSidebarProps) {
 
   return (
     <aside className="rounded-lg bg-dark p-4" aria-label="Jadwal Pertandingan">
-      <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-text-on-dark">Pertandingan</h3>
+      <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-text-on-dark">Pertandingan</h3>
       <div className="space-y-3">
         {matches.slice(0, 5).map((match) => (
           <div key={match.id} className="rounded-md bg-dark-soft p-3">
@@ -19,7 +19,7 @@ export default function MatchSidebar({ matches }: MatchSidebarProps) {
             </div>
             <div className="mt-2 flex items-center justify-between text-sm text-text-on-dark">
               <span className="flex-1 truncate font-medium">{match.homeTeam.name}</span>
-              <span className="mx-2 rounded bg-dark px-2 py-0.5 text-xs font-bold">
+              <span className="mx-2 rounded bg-dark px-2 py-0.5 text-xs font-medium">
                 {match.status === 'finished' || match.status === 'live'
                   ? `${match.homeScore ?? 0} - ${match.awayScore ?? 0}`
                   : formatTime(match.kickoffAt)}
@@ -38,7 +38,7 @@ export default function MatchSidebar({ matches }: MatchSidebarProps) {
 
 function StatusBadge({ status }: { status: string }) {
   const styles: Record<string, string> = {
-    live: 'text-alert font-bold',
+    live: 'text-alert font-medium',
     finished: 'text-text-on-dark/50',
     scheduled: 'text-primary',
     postponed: 'text-text-on-dark/40',

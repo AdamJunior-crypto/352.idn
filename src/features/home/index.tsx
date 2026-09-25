@@ -32,7 +32,7 @@ export default function HomeFeature() {
               <HotArticles articles={data.hot} />
             )}
           </div>
-          
+
           {/* Sidebar Mobile: Tampil di bawah Support headline */}
           <aside className="block lg:hidden">
             <Sidebar showTimnas={true}>
@@ -42,7 +42,7 @@ export default function HomeFeature() {
 
           <LatestNews />
         </div>
-        
+
         {/* Sidebar Desktop */}
         <aside className="hidden lg:block">
           <Sidebar showTimnas={true}>

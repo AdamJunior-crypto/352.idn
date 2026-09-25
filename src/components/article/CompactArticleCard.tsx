@@ -21,7 +21,7 @@ export default function CompactArticleCard({
           />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-sm font-bold leading-snug text-text line-clamp-2 transition-colors group-hover:text-primary">
+          <h3 className="text-sm font-semibold leading-snug text-text line-clamp-2 transition-colors group-hover:text-primary">
             {article.title}
           </h3>
         </div>

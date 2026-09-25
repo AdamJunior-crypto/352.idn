@@ -40,7 +40,7 @@ export default function EditorialPage() {
   return (
     <div className="mx-auto max-w-[760px] px-4 py-12">
       {/* Header Section */}
-      <h1 className="text-3xl font-extrabold text-text mb-2">
+      <h1 className="text-3xl font-semibold text-text mb-2 font-serif">
         Pedoman Redaksi
       </h1>
       <p className="text-text-secondary mb-8">
@@ -61,7 +61,7 @@ export default function EditorialPage() {
                 <Icon className="h-6 w-6" />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-text mb-1">
+                <h2 className="text-lg font-semibold text-text mb-1">
                   {point.title}
                 </h2>
                 <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
@@ -81,7 +81,7 @@ export default function EditorialPage() {
             <IoIosPaperPlane className="h-6 w-6" />
           </div>
           <div>
-            <h2 className="text-lg font-bold text-text">
+            <h2 className="text-lg font-semibold text-text">
               Punya Pertanyaan Redaksi?
             </h2>
             <p className="text-sm text-text-secondary mt-0.5">

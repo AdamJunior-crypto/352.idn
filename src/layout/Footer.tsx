@@ -8,7 +8,7 @@ export function Footer() {
     // Menggunakan bg-surface agar area footer memiliki pemisah visual halus
     // dari konten utama, dan text-text agar warna dasar teks otomatis adaptif
     <footer className="bg-surface text-text">
-      <div className="mx-auto flex max-w-[var(--container-max)] flex-col items-center px-4 py-12">
+      <div className="mx-auto flex max-w-[var(--container-max)] flex-col items-center px-4 py-12 ">
         {/* Bagian Logo Tengah */}
         <div className="mb-10 flex justify-center">
           <SiteLogo />

@@ -32,7 +32,7 @@ export default function ArticleSquareCard({ article }: ArticleSquareCardType) {
           </time>
 
           {/* Judul Artikel */}
-          <h3 className="text-base font-bold leading-snug text-text line-clamp-3 transition-colors group-hover:text-primary">
+          <h3 className="text-base font-semibold leading-snug text-text line-clamp-3 transition-colors group-hover:text-primary">
             {article.title}
           </h3>
         </div>

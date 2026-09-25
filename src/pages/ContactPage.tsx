@@ -12,7 +12,7 @@ export default function ContactPage() {
 
   return (
     <div className="mx-auto max-w-[760px] px-4 py-12">
-      <h1 className="text-3xl font-extrabold text-text mb-2">Kontak Kami</h1>
+      <h1 className="text-3xl font-semibold text-text mb-2 font-serif">Kontak Kami</h1>
       <p className="text-text-secondary mb-8">
         Hubungi kami melalui kanal resmi di bawah ini untuk pertanyaan umum,
         redaksi, maupun informasi kerja sama bisnis.

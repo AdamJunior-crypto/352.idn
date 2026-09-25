@@ -10,8 +10,8 @@ export default function NotFoundPage() {
 
   return (
     <div className="mx-auto max-w-[var(--container-max)] px-4 py-20 text-center">
-      <h1 className="text-8xl font-extrabold text-primary">404</h1>
-      <p className="mt-4 text-2xl font-bold text-text">Halaman Tidak Ditemukan</p>
+      <h1 className="text-8xl font-semibold text-primary font-serif">404</h1>
+      <p className="mt-4 text-2xl font-medium text-text">Halaman Tidak Ditemukan</p>
       <p className="mt-2 text-text-muted">Halaman yang Anda cari tidak ada atau telah dipindahkan.</p>
       <div className="mt-8 flex flex-col items-center gap-4">
         <Link

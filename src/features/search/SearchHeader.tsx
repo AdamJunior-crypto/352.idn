@@ -8,7 +8,7 @@ type SearchHeaderProps = {
 export default function SearchHeader({ query, total }: SearchHeaderProps) {
   return (
     <div className="mb-8">
-      <h1 className="text-3xl font-extrabold text-text mb-4">Pencarian</h1>
+      <h1 className="text-3xl font-semibold text-text mb-4 font-serif">Pencarian</h1>
       <SearchBar defaultValue={query} className="max-w-xl" />
       {query && (
         <p className="mt-4 text-sm text-text-muted">

@@ -68,7 +68,7 @@ export default function CyberGuidelinePage() {
   return (
     <div className="mx-auto max-w-[760px] px-4 py-12">
       {/* Header Section */}
-      <h1 className="text-3xl font-extrabold text-text mb-2">
+      <h1 className="text-3xl font-semibold text-text mb-2 font-serif">
         Pedoman Media Siber
       </h1>
       <p className="text-text-secondary mb-8">
@@ -89,7 +89,7 @@ export default function CyberGuidelinePage() {
                 <Icon className="h-6 w-6" />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-text mb-1">
+                <h2 className="text-lg font-semibold text-text mb-1">
                   {item.title}
                 </h2>
                 <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
@@ -107,7 +107,7 @@ export default function CyberGuidelinePage() {
         <div className="flex items-start gap-3">
           <IoIosHelpCircle className="h-6 w-6 text-primary shrink-0 mt-0.5" />
           <div>
-            <h2 className="text-base font-bold text-text mb-1">
+            <h2 className="text-base font-semibold text-text mb-1">
               Penyelesaian Sengketa
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed">

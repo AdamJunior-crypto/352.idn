@@ -37,7 +37,7 @@ export default function ArticleListItem({ article }: ArticleListItemProps) {
           </time>
         </div>
         <Link to={`/artikel/${article.slug}`}>
-          <h3 className="mt-1.5 text-base font-bold leading-snug text-text line-clamp-2 transition-colors group-hover:text-primary lg:text-lg">
+          <h3 className="mt-1.5 text-base font-semibold leading-snug text-text line-clamp-2 transition-colors group-hover:text-primary lg:text-lg">
             {article.title}
           </h3>
           <p className="text-xs text-text-muted">{article.excerpt}</p>

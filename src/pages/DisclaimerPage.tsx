@@ -45,7 +45,7 @@ export default function DisclaimerPage() {
   return (
     <div className="mx-auto max-w-[760px] px-4 py-12">
       {/* Header Section */}
-      <h1 className="text-3xl font-extrabold text-text mb-2">Disclaimer</h1>
+      <h1 className="text-3xl font-semibold text-text mb-2 font-serif">Disclaimer</h1>
       <p className="text-text-secondary mb-8">
         Batasan tanggung jawab dan ketentuan penggunaan informasi pada platform
         352.IDN.
@@ -64,7 +64,7 @@ export default function DisclaimerPage() {
                 <Icon className="h-6 w-6" />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-text mb-1">
+                <h2 className="text-lg font-semibold text-text mb-1">
                   {item.title}
                 </h2>
                 <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
@@ -79,7 +79,7 @@ export default function DisclaimerPage() {
       {/* Box Catatan Penting */}
       <div className="rounded-xl border border-border bg-surface p-6 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
-        <h2 className="text-base font-bold text-text mb-2">
+        <h2 className="text-base font-semibold text-text mb-2">
           Pemberitahuan Hak Cipta & Penggunaan
         </h2>
         <p className="text-sm text-text-secondary leading-relaxed">

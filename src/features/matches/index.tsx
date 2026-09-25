@@ -12,7 +12,7 @@ export default function MatchesFeature() {
 
   return (
     <div className="mx-auto max-w-[var(--container-max)] px-4 py-8">
-      <h1 className="mb-6 text-3xl font-extrabold text-text">Jadwal Pertandingan</h1>
+      <h1 className="mb-6 text-3xl font-semibold text-text font-serif">Jadwal Pertandingan</h1>
       <MatchFilters selectedDate={date} onDateChange={setDate} />
       {isLoading && <LoadingSkeleton variant="list" count={5} />}
       {error && <ErrorState message="Gagal memuat jadwal pertandingan." />}

@@ -32,7 +32,7 @@ export default function HeroHeadline({ article }: HeroHeadlineProps) {
         />
 
         <Link to={`/artikel/${article.slug}`} className="block">
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight text-white hover:text-primary-soft transition-colors">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold font-serif leading-tight text-white hover:text-primary-soft transition-colors">
             {article.title}
           </h1>
         </Link>

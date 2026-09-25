@@ -14,7 +14,7 @@ export default function SectionHeader({
 }: SectionHeaderProps) {
   return (
     <div className="flex items-center justify-between border-b-2 border-primary pb-3 mb-6">
-      <h2 className="text-xl font-bold text-text lg:text-xl">{title}</h2>
+      <h2 className="text-xl font-semibold text-text lg:text-xl">{title}</h2>
       {href && (
         <Link
           to={href}

@@ -31,7 +31,7 @@ export default function ArticleCard({
       </Link>
       <div className="p-4">
         <Link to={`/artikel/${article.slug}`}>
-          <h3 className="text-lg font-bold leading-snug text-text line-clamp-2 transition-colors group-hover:text-primary">
+          <h3 className="text-lg font-semibold leading-snug text-text line-clamp-2 transition-colors group-hover:text-primary">
             {article.title}
           </h3>
         </Link>
