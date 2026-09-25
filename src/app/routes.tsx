@@ -1,18 +1,19 @@
-import { createBrowserRouter } from 'react-router-dom'
-import Layout from '../layout'
-import HomePage from '../pages/HomePage'
-import CategoryPage from '../pages/CategoryPage'
-import ArticlePage from '../pages/ArticlePage'
-import LatestArticlesPage from '../pages/LatestArticlesPage'
-import SearchPage from '../pages/SearchPage'
-import MatchesPage from '../pages/MatchesPage'
-import AboutPage from '../pages/AboutPage'
-import EditorialPage from '../pages/EditorialPage'
-import ContactPage from '../pages/ContactPage'
-import PrivacyPage from '../pages/PrivacyPage'
-import TermsPage from '../pages/TermsPage'
-import DisclaimerPage from '../pages/DisclaimerPage'
-import NotFoundPage from '../pages/NotFoundPage'
+import { createBrowserRouter } from 'react-router-dom';
+import Layout from '../layout';
+import HomePage from '../pages/HomePage';
+import CategoryPage from '../pages/CategoryPage';
+import ArticlePage from '../pages/ArticlePage';
+import LatestArticlesPage from '../pages/LatestArticlesPage';
+import SearchPage from '../pages/SearchPage';
+import MatchesPage from '../pages/MatchesPage';
+import AboutPage from '../pages/AboutPage';
+import EditorialPage from '../pages/EditorialPage';
+import ContactPage from '../pages/ContactPage';
+import PrivacyPage from '../pages/PrivacyPage';
+import TermsPage from '../pages/TermsPage';
+import DisclaimerPage from '../pages/DisclaimerPage';
+import CyberGuidelinePage from '../pages/CyberGuidelinePage';
+import NotFoundPage from '../pages/NotFoundPage';
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +31,8 @@ export const router = createBrowserRouter([
       { path: 'privacy-policy', element: <PrivacyPage /> },
       { path: 'terms-of-service', element: <TermsPage /> },
       { path: 'disclaimer', element: <DisclaimerPage /> },
+      { path: 'pedoman-media-siber', element: <CyberGuidelinePage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },
-])
+]);

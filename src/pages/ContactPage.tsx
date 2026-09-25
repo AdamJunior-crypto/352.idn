@@ -1,46 +1,53 @@
 import { useEffect } from 'react';
 import { setSeoMeta } from '../lib/seo';
-import { IoIosMail } from 'react-icons/io';
+import { IoIosMail, IoIosCall } from 'react-icons/io';
 
 export default function ContactPage() {
   useEffect(() => {
-    setSeoMeta({ title: 'Kontak', description: 'Hubungi redaksi 352.IDN.' });
+    setSeoMeta({
+      title: 'Kontak & Kerja Sama',
+      description: 'Hubungi redaksi dan tim bisnis 352.IDN.',
+    });
   }, []);
 
   return (
     <div className="mx-auto max-w-[760px] px-4 py-12">
-      <h1 className="text-3xl font-extrabold text-text mb-6">Kontak</h1>
-      <div className="space-y-6 text-text-secondary leading-relaxed">
-        <div className="flex items-start gap-4 rounded-lg border border-border p-6">
-          <IoIosMail className="h-6 w-6 text-primary mt-0.5 shrink-0" />
+      <h1 className="text-3xl font-extrabold text-text mb-2">Kontak Kami</h1>
+      <p className="text-text-secondary mb-8">
+        Hubungi kami melalui kanal resmi di bawah ini untuk pertanyaan umum,
+        redaksi, maupun informasi kerja sama bisnis.
+      </p>
+    
+      {/* Grid Kontak */}
+      <div className="grid gap-4 sm:grid-cols-2 mb-8">
+        {/* Email Umum */}
+        <div className="flex items-start gap-4 rounded-lg border border-border bg-surface p-5 transition-colors hover:border-primary">
+          <div className="rounded-md bg-primary-soft p-2.5 text-primary shrink-0">
+            <IoIosMail className="h-6 w-6" />
+          </div>
           <div>
-            <h2 className="text-lg font-bold text-text">Email Umum</h2>
-            <a
-              href="mailto:info@352.idn"
-              className="text-primary hover:underline"
-            >
+            <h2 className="text-sm font-semibold text-text-muted">
+              Email Umum
+            </h2>
+            <span className="text-base font-medium text-text hover:text-primary transition-colors block mt-0.5">
               info@352.idn
-            </a>
+            </span>
           </div>
         </div>
-        <div className="flex items-start gap-4 rounded-lg border border-border p-6">
-          <IoIosMail className="h-6 w-6 text-primary mt-0.5 shrink-0" />
+
+        {/* Kontak Bisnis */}
+        <div className="flex items-start gap-4 rounded-lg border border-border bg-surface p-5 transition-colors hover:border-primary">
+          <div className="rounded-md bg-primary-soft p-2.5 text-primary shrink-0">
+            <IoIosCall className="h-6 w-6" />
+          </div>
           <div>
-            <h2 className="text-lg font-bold text-text">Email Redaksi</h2>
-            <a
-              href="mailto:redaksi@352.idn"
-              className="text-primary hover:underline"
-            >
-              redaksi@352.idn
-            </a>
+            <h2 className="text-sm font-semibold text-text-muted">
+              Kontak Bisnis
+            </h2>
+            <span className="text-base font-medium text-text hover:text-primary transition-colors block mt-0.5">
+              +62 812-3456-7890
+            </span>
           </div>
-        </div>
-        <div className="rounded-lg border border-border p-6">
-          <h2 className="text-lg font-bold text-text mb-2">Kerja Sama</h2>
-          <p>
-            Untuk kerja sama iklan, sponsor, dan kemitraan lainnya, silakan
-            hubungi melalui email di atas.
-          </p>
         </div>
       </div>
     </div>
