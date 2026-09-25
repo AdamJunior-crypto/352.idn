@@ -25,22 +25,26 @@ export default function HomeFeature() {
   return (
     <div className="mx-auto max-w-[var(--container-max)] px-4">
       <div className="grid gap-6 py-6 lg:grid-cols-[1fr_320px]">
-        <div className="space-y-10 min-w-0">
+        <div className="flex flex-col space-y-10 min-w-0">
           <div>
             {data.hero && <HeroHeadline article={data.hero} />}
             {data.hot && data.hot.length > 0 && (
               <HotArticles articles={data.hot} />
             )}
           </div>
+          
+          {/* Sidebar Mobile: Tampil di bawah Support headline */}
+          <aside className="block lg:hidden">
+            <Sidebar showTimnas={true}>
+              <MatchSidebar matches={matches} />
+            </Sidebar>
+          </aside>
+
           <LatestNews />
         </div>
+        
+        {/* Sidebar Desktop */}
         <aside className="hidden lg:block">
-          {/* 
-            Sidebar reusable: showTimnas=false karena di beranda, 
-            data timnas sudah di-fetch oleh useHomeArticles dan 
-            ditampilkan oleh MatchSidebar bersama jadwal pertandingan.
-            Kita inject MatchSidebar sebagai konten khusus halaman beranda.
-          */}
           <Sidebar showTimnas={true}>
             <MatchSidebar matches={matches} />
           </Sidebar>

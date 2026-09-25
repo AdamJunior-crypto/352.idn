@@ -1,0 +1,12 @@
+Revisi ini fokus pada tampilan mobile.
+
+1. Support headline / hot artikel mempunyai ukuran terlalu besar, saking besarnya dia mengimbangi aura dari headline. Adjust 
+ukuran Support headline agar tidak terlalu besar
+2. Perbaiki navbar agar layoutnya lebih rapih. Buat humberger menu berada di sebelah kiri logo 352.idn lalu sebelah kanan button
+toggle light/dark mode dan di tengah logo.
+3. perbaiki layout beranda agar sidebar berada di bawwah Support headline, tampilkan ads baner di index ke 2.
+
+
+- lib
+Buat window scroll ke atas setiap kali pindah halaman.
+- Buatkan fungsi sitemap yang bisa membantu google atau search engine menemukan halaman websiteku.

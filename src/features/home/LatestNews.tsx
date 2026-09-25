@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import ArticleListItemComponent from '../../components/article/ArticleListItem';
 import { useInfiniteArticles } from '../../hooks/useInfiniteArticles';
+import AdResponsive from '../../components/Ads/AdResponsive';
 
 export default function LatestNews() {
   const { articles, loading, lastElementRef } = useInfiniteArticles(10);
@@ -23,15 +24,20 @@ export default function LatestNews() {
 
       <div className="divide-y divide-border">
         {articles.map((article, index) => {
-          if (index === articles.length - 2) {
-            return (
-              <div ref={lastElementRef} key={article._id}>
+          const isSecondIndex = index === 2;
+          const isSecondToLast = index === articles.length - 2;
+
+          return (
+            <div key={article._id}>
+              {isSecondIndex && (
+                <div className="py-4">
+                  <AdResponsive />
+                </div>
+              )}
+              <div ref={isSecondToLast ? lastElementRef : null}>
                 <ArticleListItemComponent article={article} />
               </div>
-            );
-          }
-          return (
-            <ArticleListItemComponent key={article._id} article={article} />
+            </div>
           );
         })}
       </div>

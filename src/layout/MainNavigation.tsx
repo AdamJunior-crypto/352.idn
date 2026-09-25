@@ -1,20 +1,23 @@
-import { NavLink } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import SearchBar from '../components/navigation/SearchBar'
-import { fetchCategories } from '../queries/categoryQueries'
-import type { Category } from '../types/category'
+import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import SearchBar from '../components/navigation/SearchBar';
+import { fetchCategories } from '../queries/categoryQueries';
+import type { Category } from '../types/category';
 
 type MainNavigationProps = {
-  mobileOpen?: boolean
-  onClose?: () => void
-}
+  mobileOpen?: boolean;
+  onClose?: () => void;
+};
 
-export function MainNavigation({ mobileOpen = false, onClose = () => {} }: MainNavigationProps) {
-  const [categories, setCategories] = useState<Category[]>([])
+export function MainNavigation({
+  mobileOpen = false,
+  onClose = () => {},
+}: MainNavigationProps) {
+  const [categories, setCategories] = useState<Category[]>([]);
 
   useEffect(() => {
-    fetchCategories().then(setCategories).catch(console.error)
-  }, [])
+    fetchCategories().then(setCategories).catch(console.error);
+  }, []);
 
   const navItems = [
     { label: 'Beranda', href: '/' },
@@ -22,13 +25,15 @@ export function MainNavigation({ mobileOpen = false, onClose = () => {} }: MainN
       label: cat.title,
       href: `/kategori/${cat.slug}`,
     })),
-    { label: 'Jadwal', href: '/jadwal' }
-  ]
+  ];
 
   return (
     <>
       {/* Desktop */}
-      <nav className="hidden border-t border-border md:block" aria-label="Main navigation">
+      <nav
+        className="hidden border-t border-border md:block"
+        aria-label="Main navigation"
+      >
         <div className="mx-auto flex max-w-[var(--container-max)] items-center gap-1 px-4">
           {navItems.map((item) => (
             <NavLink
@@ -51,7 +56,10 @@ export function MainNavigation({ mobileOpen = false, onClose = () => {} }: MainN
 
       {/* Mobile */}
       {mobileOpen && (
-        <nav className="border-t border-border bg-background md:hidden" aria-label="Mobile navigation">
+        <nav
+          className="border-t border-border bg-background md:hidden"
+          aria-label="Mobile navigation"
+        >
           <div className="px-4 py-3">
             <SearchBar className="mb-3" />
             {navItems.map((item) => (
@@ -73,5 +81,5 @@ export function MainNavigation({ mobileOpen = false, onClose = () => {} }: MainN
         </nav>
       )}
     </>
-  )
+  );
 }
